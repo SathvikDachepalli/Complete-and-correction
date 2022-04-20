@@ -15,5 +15,6 @@ Correction box gives you corrections for the wrong words when they are selected 
 	refer corrections.mp4 
 
 #UI:
+
 For simplistic purpose, this UI was designed but nevertheless this can be easily upgradeable and understandable.
 You can even change it to Darkmode or Lightmode depending upon your preference. 
