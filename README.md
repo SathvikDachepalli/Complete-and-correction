@@ -6,7 +6,11 @@ Usage:
 	
 	
 # To understand the funcitonality:
+Suggestion box gives you suggestions while typing, you can click on the suggestions or use arrows ↑ and ↓ to navigate through the menu bar.	
 
-	refer suggestions.mp4 
+	refer suggestions.mp4
+	
+Correction box gives you corrections for the wrong words when they are selected by dragging on or by double clicking on the wrong word. You can choose the appropriate word from the correction box below bar
+
 	refer corrections.mp4 
 
