@@ -13,8 +13,9 @@ Suggestion box gives you suggestions while typing, you can click on the suggesti
 Correction box gives you corrections for the wrong words when they are selected by dragging on or by double clicking on the wrong word. You can choose the appropriate word from the correction box below bar
 
 	refer corrections.mp4 
+	
 
-#UI:
+# UI :
 
 For simplistic purpose, this UI was designed but nevertheless this can be easily upgradeable and understandable.
 You can even change it to Darkmode or Lightmode depending upon your preference. 
