@@ -17,7 +17,6 @@
         function ShowSelection() {
             document.querySelector('#editor').addEventListener('mouseup', function() {
                 window.mySelection = this.value.substring(this.selectionStart, this.selectionEnd);
-                console.log(this.value.substring(0, this.selectionStart) + this.value.substring(e));
             });
         };
 
@@ -40,19 +39,10 @@
                 <h1>EZTYP</h1>
             </a>
         </div>
-        <div class="dropdown-container" tabindex="-1">
-            <div class="three-dots"></div>
-            <div class="dropdown menu-item">
-                <a href="index.html">
-                    <div>Welcome</div>
-                </a>
-                </a>
-                <a href="#" onclick="darkMode();" id="Darkmode">
-                    <div>Darkmode</div>
-                </a>
-                <a href="#" onclick="lightMode();" id="Lightmode">
-                    <div>Lightmode</div>
-                </a>
+        <div class="Toggle">            
+            <div class="switch">
+                <input id="switch-1" type="checkbox" class="switch-input" onclick="if(this.checked){darkMode();}else{lightMode();}" />
+                <label for="switch-1" class="switch-label">Switch</label>
             </div>
         </div>
     </div>
@@ -80,12 +70,9 @@
             var word = arr[arr.length - 1];
             p.innerText = "";
             if (!str || str.length === 0 || str != /^\s+$/) {
-                console.log(word);
                 index.search(word).then(({
                     hits
                 }) => {
-
-                    console.log(hits);
                     if (input.value != " ") {
                         hits.forEach(element => {
                             var endstr = element.a;
@@ -128,8 +115,7 @@
 
     <script>
         function corrections(results, start, end) {
-            console.log("this", results);
-            remove()
+            remove();
             var correction_container = $("div#correctbox");
             var p = $("<p></p>").attr("id", "text");
             correction_container.append(p);
@@ -224,7 +210,6 @@
         });
         editor.on('click', function() {
             var range = quill.getSelection();
-            console.log(range);
             if (range.length < 30) {
                 if (range.length == 0) {
                     console.log('User cursor is at index', text, range.index, range.length);
